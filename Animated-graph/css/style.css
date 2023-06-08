@@ -1,0 +1,32 @@
+      .bar {
+        width: 20px;
+        height: 0;
+        transition: height 1s;
+        margin-right: 20px;
+        /* Add spacing between bar graphs */
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 300px;
+      }
+
+      /* Assign different colors to each bar */
+      #bar1 {
+        background-color: blue;
+      }
+
+      #bar2 {
+        background-color: green;
+      }
+
+      #bar3 {
+        background-color: orange;
+      }
+
+      .heading {
+        text-align: center;
+        display: block;
+      }

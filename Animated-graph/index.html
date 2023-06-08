@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Bar Plot Animation</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body onload="animateBars()">
+    <h1 style="text-align: center;">Bar Plot</h1>
+
+    <div class="container">
+      <div class="bar" id="bar1"></div>
+      <div class="bar" id="bar2"></div>
+      <div class="bar" id="bar3"></div>
+    </div>
+
+    <script>
+      function animateBars() {
+        animateBar('bar1', 30);
+        animateBar('bar2', 40);
+        animateBar('bar3', 80);
+      }
+
+      function animateBar(barId, percentage) {
+        var bar = document.getElementById(barId);
+        var maxHeight = 200; // Maximum height for the bar
+
+        var height = (maxHeight * percentage) / 100;
+        bar.style.height = height + 'px';
+      }
+    </script>
+  </body>
+
+</html>
